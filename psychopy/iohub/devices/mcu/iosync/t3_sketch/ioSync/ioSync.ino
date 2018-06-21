@@ -27,7 +27,7 @@ Distributed under the terms of the GNU General Public License
 //     - Ensure Tools -> USB Type is set to "Serial" only.
 //     - Rebuild the iosync sketch and upload it.
 //
-#define KEYBOARD
+//#define KEYBOARD
 
 // >>>>>> DIGITAL_INPUT_TYPE <<<<<<<
 //

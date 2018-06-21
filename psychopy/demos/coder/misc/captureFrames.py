@@ -11,11 +11,11 @@ from builtins import range
 from psychopy import visual, core, logging
 logging.console.setLevel(logging.INFO)
 
-win = visual.Window([200, 200])
-myStim = visual.GratingStim(win, pos=[-0.5, -0.5],
+win = visual.Window([400, 400])
+myStim = visual.GratingStim(win, pos=[0.0, 0.0],
     size=1, sf=5, color=[0, 1, 1], ori=30, mask='gauss', autoLog=False)
 
-n = 10
+n = 1000
 for frameN in range(n):
     myStim.setPhase(0.1, '+')
     myStim.draw()
@@ -27,7 +27,7 @@ for frameN in range(n):
     win.flip()
 
 # save the movie in the format of your choice
-win.saveMovieFrames('frame.png', clearFrames=False)
+# win.saveMovieFrames('frame.png', clearFrames=False)
 win.saveMovieFrames('myMovie.gif', clearFrames=False)
 win.saveMovieFrames('myMovie.mp4', clearFrames=False)
 win.saveMovieFrames('myMovie.mov', clearFrames=False)

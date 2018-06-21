@@ -282,6 +282,7 @@ def getGammaRampSize(screenID, xDisplay=None):
         rampSize = 256
 
     if rampSize == 0:
-        raise RuntimeError("Gamma ramp size is reported as 0.")
+        rampSize = 256
+        # raise RuntimeError("Gamma ramp size is reported as 0.")
 
     return rampSize
